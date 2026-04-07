@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Tools: Smarter Development with AI-Powered Assistance | AI-TOOLS</title>
+    <meta name="description" content="Find the best AI code tools for smarter development. Browse AI code assistants, low-code/no-code platforms, and SQL tools to boost productivity and build faster.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ---- Page-specific styles ---- */
+
+        .hero-directory { padding: 60px 20px 40px; background: var(--dark, #0f0f0f); text-align: center; }
+        .hero-directory-inner { max-width: 760px; margin: 0 auto; }
+        .hero-directory h1 { font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: #fff; margin-bottom: 14px; }
+        .hero-directory p { color: #aaa; font-size: 1rem; line-height: 1.7; margin-bottom: 28px; }
+
+        /* Subcategory anchor nav */
+        .subcat-nav { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 16px; }
+        .subcat-nav a {
+            padding: 8px 18px; border-radius: 100px; font-size: 0.85rem; font-weight: 600;
+            background: #1a1a1a; color: #ccc; border: 1px solid #2a2a2a;
+            text-decoration: none; transition: all .2s;
+        }
+        .subcat-nav a:hover, .subcat-nav a.active { background: var(--accent, #7c3aed); color: #fff; border-color: var(--accent, #7c3aed); }
+
+        /* Content layout */
+        .page-content { max-width: 1100px; margin: 0 auto; padding: 50px 20px 70px; }
+
+        /* Subcategory blocks */
+        .subcat-block { margin-bottom: 60px; }
+        .subcat-block h2 {
+            font-family: 'Syne', sans-serif; font-size: 1.4rem; color: #1a1a1a;
+            border-left: 4px solid var(--accent, #7c3aed); padding-left: 14px; margin-bottom: 20px;
+        }
+
+        /* Tool cards grid — reuse existing .tools-grid + .tool-card from style.css */
+
+        /* Benefits + Use Cases section */
+        .info-section { margin-bottom: 56px; }
+        .info-section h2 {
+            font-family: 'Syne', sans-serif; font-size: 1.5rem; color: #1a1a1a; margin-bottom: 16px;
+        }
+        .info-section p, .info-section li { color: #444; font-size: 0.97rem; line-height: 1.75; }
+        .info-section ul { padding-left: 20px; margin-top: 8px; }
+        .info-section ul li { margin-bottom: 8px; }
+        .info-section ul li strong { color: #1a1a1a; }
+
+        /* Who should use — cards */
+        .who-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; }
+        .who-card {
+            background: #f5f3ff; border: 1px solid #e0d9ff; border-radius: 12px;
+            padding: 18px 16px; text-align: center;
+        }
+        .who-card .who-icon { font-size: 1.6rem; margin-bottom: 8px; }
+        .who-card h4 { font-family: 'Syne', sans-serif; font-size: 0.9rem; color: #1a1a1a; margin-bottom: 4px; }
+        .who-card p { font-size: 0.8rem; color: #666; margin: 0; line-height: 1.5; }
+
+        /* FAQ */
+        .faq-list { margin-top: 16px; }
+        .faq-item { border-bottom: 1px solid #eee; padding: 18px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q { font-family: 'Syne', sans-serif; font-size: 1rem; color: #1a1a1a; margin-bottom: 6px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-q span { font-size: 1.1rem; transition: transform .3s; }
+        .faq-item.open .faq-q span { transform: rotate(45deg); }
+        .faq-a { color: #555; font-size: 0.93rem; line-height: 1.7; display: none; padding-top: 4px; }
+        .faq-item.open .faq-a { display: block; }
+
+        /* CTA banner */
+        .cta-banner {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            border-radius: 18px; padding: 48px 32px; text-align: center; margin: 60px 0 20px;
+        }
+        .cta-banner h2 { font-family: 'Syne', sans-serif; color: #fff; font-size: 1.8rem; margin-bottom: 12px; }
+        .cta-banner p { color: rgba(255,255,255,.8); margin-bottom: 24px; }
+        .cta-banner .btn-primary { background: #fff; color: #7c3aed; font-weight: 700; }
+        .cta-banner .btn-primary:hover { background: #f3f0ff; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo"><a href="home.html">AI-TOOLS</a></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html" class="active">AI Tools</a></li>
+            <li><a href="submit.html">Submit Tool</a></li>
+        </ul>
+        <a href="submit.html" class="nav-cta">+ Submit Tool</a>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumb-inner">
+            <a href="home.html">Home</a>
+            <span>/</span>
+            <a href="index.html">AI Tools</a>
+            <span>/</span>
+            <span>Code Tools</span>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero-directory">
+        <div class="hero-directory-inner">
+            <h1>AI Code Tools: Smarter Development with AI-Powered Assistance</h1>
+            <p>Boost your development workflow with powerful AI code tools. These tools help developers write code faster, automate repetitive tasks, and build reliable and scalable applications. Whether you are a beginner or an experienced developer, AI-powered coding tools can improve productivity and simplify complex development tasks.</p>
+
+            <!-- Subcategory filter nav -->
+            <div class="subcat-nav">
+                <a href="#all" class="active" data-filter="all">All Tools</a>
+                <a href="#low-code" data-filter="Low-Code/No-Code">Low-Code / No-Code</a>
+                <a href="#assistant" data-filter="Code Assistant">Code Assistant</a>
+                <a href="#sql" data-filter="SQL">SQL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <div class="page-content">
+
+        <!-- ── Low-Code / No-Code ── -->
+        <div class="subcat-block" id="low-code">
+            <h2>🧱 Low-Code / No-Code</h2>
+            <div class="tools-grid" id="lowCodeGrid"></div>
+        </div>
+
+        <!-- ── Code Assistant ── -->
+        <div class="subcat-block" id="assistant">
+            <h2>🤖 Code Assistant</h2>
+            <div class="tools-grid" id="assistantGrid"></div>
+        </div>
+
+        <!-- ── SQL ── -->
+        <div class="subcat-block" id="sql">
+            <h2>🗄️ SQL</h2>
+            <div class="tools-grid" id="sqlGrid"></div>
+        </div>
+
+        <!-- ── Benefits ── -->
+        <div class="info-section" id="benefits">
+            <h2>Key Benefits of AI Code Tools</h2>
+            <p>AI code tools are transforming how developers write, test, and manage code. By combining machine learning with development environments, these tools help developers work faster and reduce manual effort.</p>
+            <p>Some of the main benefits include:</p>
+            <ul>
+                <li><strong>Faster development:</strong> AI tools generate code suggestions and automate repetitive tasks, allowing developers to focus on solving complex problems.</li>
+                <li><strong>Improved code quality:</strong> Many AI coding assistants analyze code and recommend improvements that reduce bugs and improve readability.</li>
+                <li><strong>Time-saving automation:</strong> Tasks like documentation, debugging, and test generation can be automated with AI-powered tools.</li>
+                <li><strong>Learning support for beginners:</strong> Developers learning new programming languages can use AI tools to understand syntax, generate examples, and improve coding skills.</li>
+            </ul>
+        </div>
+
+        <!-- ── Use Cases ── -->
+        <div class="info-section">
+            <h2>Use Cases of AI Code Tools</h2>
+            <p>AI coding tools are used across many areas of software development:</p>
+            <ul>
+                <li><strong>Code generation:</strong> Developers can generate code snippets, functions, or entire scripts by describing what they want to build.</li>
+                <li><strong>Bug detection and debugging:</strong> AI tools analyze code and identify errors, vulnerabilities, or inefficient logic.</li>
+                <li><strong>Code documentation:</strong> Some AI tools automatically generate comments and documentation for complex codebases.</li>
+                <li><strong>Testing automation:</strong> AI can generate unit tests and integration tests to ensure code reliability.</li>
+                <li><strong>Code refactoring:</strong> Developers can improve code structure and maintainability using AI suggestions.</li>
+            </ul>
+        </div>
+
+        <!-- ── Who Should Use ── -->
+        <div class="info-section">
+            <h2>Who Should Use AI Code Tools</h2>
+            <div class="who-grid">
+                <div class="who-card">
+                    <div class="who-icon">👨‍💻</div>
+                    <h4>Software Developers</h4>
+                    <p>Improve coding speed and automate repetitive programming tasks.</p>
+                </div>
+                <div class="who-card">
+                    <div class="who-icon">🚀</div>
+                    <h4>Startup Teams</h4>
+                    <p>Develop applications faster with smaller development teams.</p>
+                </div>
+                <div class="who-card">
+                    <div class="who-icon">🎓</div>
+                    <h4>Students</h4>
+                    <p>Understand code better with explanations and suggestions.</p>
+                </div>
+                <div class="who-card">
+                    <div class="who-icon">📊</div>
+                    <h4>Data Scientists</h4>
+                    <p>Generate Python scripts and SQL queries quickly.</p>
+                </div>
+                <div class="who-card">
+                    <div class="who-icon">💼</div>
+                    <h4>Product Teams</h4>
+                    <p>Build prototypes and MVPs faster using AI-assisted development.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── FAQ ── -->
+        <div class="info-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list" id="faqList">
+                <div class="faq-item">
+                    <div class="faq-q">What are AI code tools? <span>+</span></div>
+                    <div class="faq-a">AI code tools are software tools that use artificial intelligence to help developers write, edit, and improve code faster and more efficiently.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">How do AI coding tools help developers? <span>+</span></div>
+                    <div class="faq-a">AI coding tools help developers by suggesting code, detecting errors, generating snippets, and automating repetitive programming tasks.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Can beginners use AI code tools? <span>+</span></div>
+                    <div class="faq-a">Yes. Many AI coding tools are beginner-friendly and can help new programmers learn coding by providing examples and explanations.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Do AI code tools support multiple programming languages? <span>+</span></div>
+                    <div class="faq-a">Most AI coding tools support popular languages such as Python, JavaScript, Java, C++, and many others.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Can AI code tools generate code automatically? <span>+</span></div>
+                    <div class="faq-a">Yes. Many AI tools can generate code snippets, functions, or even entire scripts based on user instructions.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Are AI coding tools free to use? <span>+</span></div>
+                    <div class="faq-a">Some AI coding tools offer free plans, while others require a paid subscription for advanced features.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Can AI tools help find bugs in code? <span>+</span></div>
+                    <div class="faq-a">Yes. Many AI coding assistants analyze code and identify potential bugs, errors, and security issues.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Do AI coding tools integrate with development environments? <span>+</span></div>
+                    <div class="faq-a">Most AI coding tools integrate with popular IDEs like Visual Studio Code, JetBrains, and other development platforms.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Will AI replace software developers? <span>+</span></div>
+                    <div class="faq-a">No. AI tools assist developers by improving productivity, but human developers are still essential for creativity, problem-solving, and complex decisions.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Why are AI code tools becoming popular? <span>+</span></div>
+                    <div class="faq-a">AI code tools are becoming popular because they help developers write code faster, reduce errors, and simplify complex programming tasks.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-banner">
+            <h2>Have an AI Code Tool?</h2>
+            <p>List your tool and reach thousands of developers searching for the best AI solutions.</p>
+            <a href="submit.html" class="btn-primary">Submit Your Tool →</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">AI-TOOLS</div>
+            <div class="footer-links">
+                <a href="home.html">Home</a>
+                <a href="index.html">AI Tools</a>
+                <a href="submit.html">Submit Tool</a>
+            </div>
+            <p>© 2026 TechGeekBuzz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // ── Tool data for this page ──────────────────────────
+        const codeTools = [
+            { name: "GitHub Copilot", description: "AI-powered code completion and suggestion tool built into your editor.", category: "Code Assistant", url: "https://github.com/features/copilot", badge: "Popular" },
+            { name: "Cursor", description: "AI-first code editor that understands your codebase and helps you write faster.", category: "Code Assistant", url: "https://cursor.sh", badge: "Trending" },
+            { name: "Tabnine", description: "AI code completion assistant that learns your coding style and speeds up development.", category: "Code Assistant", url: "https://www.tabnine.com", badge: "" },
+            { name: "Bubble", description: "No-code platform to build fully functional web apps without writing code.", category: "Low-Code/No-Code", url: "https://bubble.io", badge: "" },
+            { name: "Webflow", description: "Visual web development platform with AI features for designers and developers.", category: "Low-Code/No-Code", url: "https://webflow.com", badge: "" },
+            { name: "AI2sql", description: "Convert plain English into SQL queries instantly using AI.", category: "SQL", url: "https://www.ai2sql.io", badge: "" }
+        ];
+
+        function renderGrid(tools, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.innerHTML = "";
+            tools.forEach(tool => {
+                const card = document.createElement("div");
+                card.className = "tool-card";
+                card.innerHTML = `
+                    ${tool.badge ? `<span class="tool-badge ${tool.badge.toLowerCase()}">${tool.badge}</span>` : ""}
+                    <div class="tool-category-label">${tool.category}</div>
+                    <h3>${tool.name}</h3>
+                    <p>${tool.description}</p>
+                    <a href="${tool.url}" target="_blank" rel="noopener">Visit Tool →</a>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            renderGrid(codeTools.filter(t => t.category === "Low-Code/No-Code"), "lowCodeGrid");
+            renderGrid(codeTools.filter(t => t.category === "Code Assistant"), "assistantGrid");
+            renderGrid(codeTools.filter(t => t.category === "SQL"), "sqlGrid");
+
+            // ── Filter nav ───────────────────────────────────
+            const filterLinks = document.querySelectorAll(".subcat-nav a");
+            filterLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    filterLinks.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+                    const filter = this.dataset.filter;
+
+                    if (filter === "all") {
+                        renderGrid(codeTools.filter(t => t.category === "Low-Code/No-Code"), "lowCodeGrid");
+                        renderGrid(codeTools.filter(t => t.category === "Code Assistant"), "assistantGrid");
+                        renderGrid(codeTools.filter(t => t.category === "SQL"), "sqlGrid");
+                        document.querySelectorAll(".subcat-block").forEach(b => b.style.display = "");
+                    } else {
+                        document.querySelectorAll(".subcat-block").forEach(b => b.style.display = "none");
+                        const filtered = codeTools.filter(t => t.category === filter);
+                        if (filter === "Low-Code/No-Code") { document.getElementById("low-code").style.display = ""; renderGrid(filtered, "lowCodeGrid"); }
+                        if (filter === "Code Assistant")   { document.getElementById("assistant").style.display = ""; renderGrid(filtered, "assistantGrid"); }
+                        if (filter === "SQL")              { document.getElementById("sql").style.display = "";       renderGrid(filtered, "sqlGrid"); }
+                    }
+                });
+            });
+
+            // ── FAQ accordion ─────────────────────────────────
+            document.querySelectorAll(".faq-q").forEach(q => {
+                q.addEventListener("click", function () {
+                    const item = this.closest(".faq-item");
+                    item.classList.toggle("open");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
