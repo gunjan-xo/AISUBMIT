@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse AI Tool Categories | AI-TOOLS Directory</title>
+    <meta name="description" content="Browse all AI tool categories including AI Code Tools, AI Text Generators, AI Image Tools, and more. Find the best AI tools for productivity, design, marketing and development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo"><a href="home.html">AI-TOOLS</a></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html" class="active">AI Tools</a></li>
+            <li><a href="submit.html">Submit Tool</a></li>
+        </ul>
+        <a href="submit.html" class="nav-cta">+ Submit Tool</a>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumb-inner">
+            <a href="home.html">Home</a>
+            <span>/</span>
+            <span>AI Tools</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-directory">
+        <div class="hero-directory-inner">
+            <h1>Browse All AI Tool Categories</h1>
+            <p>Browse all AI tool categories to find powerful tools for content creation, coding, image generation, video editing, marketing, automation, and more. Easily find the best AI tools that can help improve productivity and creativity.</p>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <input type="text" id="searchInput" placeholder="Search AI tools or categories...">
+            </div>
+
+            <!-- Stats Strip -->
+            <div class="stats-strip">
+                <div class="stat-item"><strong>500+</strong> AI Tools</div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><strong>10+</strong> Categories</div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><strong>Free</strong> to Browse</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="categories-inner">
+            <h2 class="section-title">All Categories</h2>
+
+            <!-- AI Code Tools -->
+            <div class="category-block" id="code-tools">
+                <div class="category-header">
+                    <div class="category-title-group">
+                        <div class="category-icon">💻</div>
+                        <div>
+                            <h2>1. AI Code Tools</h2>
+                            <p>Smarter development with AI-powered assistance. Boost your workflow with tools that write, review, and debug code.</p>
+                        </div>
+                    </div>
+                    <a href="code-tools.html" class="browse-all-btn">Browse All AI Code Tools →</a>
+                </div>
+
+                <div class="subcategory-tags">
+                    <a href="code-tools.html#low-code" class="subcategory-tag">Low-Code / No-Code</a>
+                    <a href="code-tools.html#assistant" class="subcategory-tag">Code Assistant</a>
+                    <a href="code-tools.html#sql" class="subcategory-tag">SQL</a>
+                </div>
+
+                <div class="tools-grid" id="codeToolsGrid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- AI Text Generators -->
+            <div class="category-block" id="text-generators">
+                <div class="category-header">
+                    <div class="category-title-group">
+                        <div class="category-icon">✍️</div>
+                        <div>
+                            <h2>2. AI Text Generators</h2>
+                            <p>Generate high-quality written content for blogs, marketing, storytelling, and more with AI writing tools.</p>
+                        </div>
+                    </div>
+                    <a href="text-generators.html" class="browse-all-btn">Browse All AI Text Generators →</a>
+                </div>
+
+                <div class="subcategory-tags">
+                    <a href="text-generators.html#writing" class="subcategory-tag">Writing Generators</a>
+                    <a href="text-generators.html#prompt" class="subcategory-tag">Prompt Generators</a>
+                    <a href="text-generators.html#copywriting" class="subcategory-tag">Copywriting</a>
+                    <a href="text-generators.html#paraphrasing" class="subcategory-tag">Paraphrasing</a>
+                    <a href="text-generators.html#storyteller" class="subcategory-tag">Storyteller</a>
+                </div>
+
+                <div class="tools-grid" id="textToolsGrid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- AI Image Tools -->
+            <div class="category-block" id="image-tools">
+                <div class="category-header">
+                    <div class="category-title-group">
+                        <div class="category-icon">🎨</div>
+                        <div>
+                            <h2>3. AI Image Tools</h2>
+                            <p>Generate, edit, and enhance images using the power of artificial intelligence.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="browse-all-btn">Browse All AI Image Tools →</a>
+                </div>
+
+                <div class="subcategory-tags">
+                    <a href="#" class="subcategory-tag">Image Generation</a>
+                    <a href="#" class="subcategory-tag">Image Editing</a>
+                    <a href="#" class="subcategory-tag">Art & Design</a>
+                </div>
+
+                <div class="tools-grid" id="imageToolsGrid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- More Categories coming soon -->
+            <div class="more-categories">
+                <h3>More Categories Coming Soon</h3>
+                <div class="coming-soon-grid">
+                    <div class="coming-soon-card">🎬 AI Video Tools</div>
+                    <div class="coming-soon-card">📊 AI Marketing Tools</div>
+                    <div class="coming-soon-card">🤖 AI Automation Tools</div>
+                    <div class="coming-soon-card">🎵 AI Audio Tools</div>
+                    <div class="coming-soon-card">📈 AI Productivity Tools</div>
+                    <div class="coming-soon-card">💼 AI Business Tools</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 TechGeekBuzz. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
